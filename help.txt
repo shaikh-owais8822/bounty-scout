@@ -1,0 +1,24 @@
+usage: bounty_scout.py [-h] [--limit LIMIT] [--min-usd MIN_USD]
+                       [--network NETWORK] [--source SOURCE]
+                       [--exclude EXCLUDE] [--sort {reward,first_seen}]
+                       [--query QUERY] [--stats] [--id ID]
+                       [--new-since NEW_SINCE] [--show-tools]
+
+Find paid agent work through Agent Bounty Feed's free MCP endpoint.
+
+options:
+  -h, --help            show this help message and exit
+  --limit LIMIT         maximum number of results to print (default: 10)
+  --min-usd MIN_USD     minimum estimated USD-equivalent reward
+  --network NETWORK     filter by network, e.g. base
+  --source SOURCE       comma-separated source names, e.g. direct,frantic
+  --exclude EXCLUDE     comma-separated requirements to exclude, e.g.
+                        kyc,stake,bond,purchase
+  --sort {reward,first_seen}
+                        sort order supported by the feed
+  --query QUERY         search phrase
+  --stats               show feed stats instead of bounty listings
+  --id ID               fetch one bounty by its feed ID, e.g. frantic:129
+  --new-since NEW_SINCE
+                        show new bounties since an ISO-8601 timestamp
+  --show-tools          show tool names and input schemas
